@@ -1,0 +1,14 @@
+batch_size: 256
+capacity: 100000
+env_name: LunarLander-v2
+eps_end: 0.15
+eps_last_episode: 100
+eps_start: 0
+gamma: 0.99
+hidden_layer: 128
+loss_fn: !!python/name:torch.nn.functional.smooth_l1_loss ''
+lr: 0.001
+optim: !!python/name:torch.optim.adamw.AdamW ''
+policy: !!python/name:Policies.epsilon_greedy ''
+sample_per_epoch: 10000
+sync_rate: 100
